@@ -1,0 +1,357 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #f5f9ff 0%, #ffffff 100%);
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+}
+
+.min-vh-75 {
+  min-height: 75vh;
+}
+
+.hero-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 40px;
+  border: 1px solid #e8edf5;
+}
+
+.hero-card-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+  background: #0d6efd;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.feature-card {
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  border-radius: 16px;
+  padding: 30px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.feature-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  background: #e7f1ff;
+  color: #0d6efd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cta-section {
+  background: #0d6efd;
+  color: white;
+  border-radius: 24px;
+  padding: 60px 30px;
+}
+/* Authentication Pages */
+
+.auth-page {
+  min-height: calc(100vh - 56px);
+  background: linear-gradient(135deg, #f5f9ff 0%, #ffffff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 480px;
+  background: white;
+  padding: 40px;
+  border-radius: 24px;
+  border: 1px solid #e8edf5;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.register-card {
+  max-width: 520px;
+}
+
+.auth-logo {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  border-radius: 18px;
+  background: #0d6efd;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.auth-card .form-control,
+.auth-card .form-select {
+  border-radius: 10px;
+}
+
+.auth-card .form-control:focus,
+.auth-card .form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+/* Alumni Directory */
+
+.alumni-page {
+  background: #f8faff;
+  min-height: calc(100vh - 56px);
+}
+
+.alumni-header {
+  background: linear-gradient(135deg, #f5f9ff 0%, #ffffff 100%);
+  padding: 70px 20px 50px;
+}
+
+.search-card {
+  background: white;
+  border: 1px solid #e8edf5;
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.alumni-card {
+  background: white;
+  border: 1px solid #e8edf5;
+  border-radius: 18px;
+  padding: 25px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.alumni-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.alumni-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #e7f1ff;
+  color: #0d6efd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+html {
+  scroll-behavior: smooth;
+}
+.profile-page {
+  min-height: calc(100vh - 56px);
+  background: #f5f8ff;
+}
+
+.profile-card {
+  max-width: 850px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: white;
+  border: 1px solid #e8edf5;
+  border-radius: 22px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06);
+}
+
+.profile-banner {
+  height: 150px;
+  background: linear-gradient(135deg, #0d6efd, #79aaff);
+}
+
+.profile-content {
+  padding: 30px 40px 40px;
+}
+
+.profile-avatar {
+  width: 90px;
+  height: 90px;
+  margin-top: -75px;
+  border: 5px solid white;
+  border-radius: 50%;
+  background: #e7f1ff;
+  color: #0d6efd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+@media (max-width: 576px) {
+  .profile-content {
+    padding: 25px 20px;
+  }
+}
+/* Jobs Page */
+
+.jobs-page {
+  min-height: calc(100vh - 56px);
+  background: #f8faff;
+}
+
+.jobs-header {
+  padding: 70px 20px 45px;
+  background: linear-gradient(135deg, #f5f9ff, #ffffff);
+}
+
+.jobs-search-card {
+  padding: 25px;
+  background: white;
+  border: 1px solid #e8edf5;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.job-card {
+  padding: 28px;
+  background: white;
+  border: 1px solid #e8edf5;
+  border-radius: 18px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.07);
+}
+
+.company-avatar {
+  width: 55px;
+  height: 55px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e7f1ff;
+  color: #0d6efd;
+  font-size: 24px;
+  font-weight: bold;
+}
+/* Post Job Page */
+
+.post-job-page {
+  min-height: calc(100vh - 56px);
+  background: #f8faff;
+}
+
+.post-job-card {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 36px;
+  background: white;
+  border: 1px solid #e8edf5;
+  border-radius: 22px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.post-job-card .form-control,
+.post-job-card .form-select {
+  padding: 12px 14px;
+  border-radius: 10px;
+}
+
+.post-job-card textarea {
+  resize: vertical;
+}
+
+@media (max-width: 576px) {
+  .post-job-card {
+    padding: 22px;
+  }
+}
+/* About Page */
+
+.about-page {
+  min-height: calc(100vh - 56px);
+  background: #f8faff;
+}
+
+.about-hero {
+  padding: 90px 20px 70px;
+  background: linear-gradient(135deg, #eef5ff, #ffffff);
+}
+
+.about-intro {
+  max-width: 760px;
+}
+
+.about-mission {
+  padding: 35px;
+  background: white;
+  border: 1px solid #e8edf5;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
+}
+
+.about-feature {
+  padding: 30px;
+  background: white;
+  border: 1px solid #e8edf5;
+  border-radius: 18px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-feature:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+}
+
+@media (max-width: 576px) {
+  .about-hero {
+    padding: 60px 20px 45px;
+  }
+
+  .about-mission,
+  .about-feature {
+    padding: 24px;
+  }
+}
+/* Footer */
+
+.site-footer {
+  background: #ffffff;
+  border-top: 1px solid #e8edf5;
+}
+
+.footer-brand {
+  color: #0d6efd;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer-link {
+  color: #596579;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #0d6efd;
+}
